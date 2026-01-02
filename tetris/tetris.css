@@ -1,0 +1,79 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+
+body {
+    background: #000 url('6060.jpg') center/cover;
+    background-color: white;
+    color: #232323;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  p {
+    color: white;
+    font-family: sans-serif;
+    size: 15px;
+    margin: auto;
+    width: 100px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin: 20px 0;
+    letter-spacing: 0.1rem;
+    animation: flicker 2s infinite alternate;
+  }
+  
+  #controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    font-family: inherit;
+    border-radius: 50%;
+    border-color: black;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 2px solid white;
+    /* background: transparent; */
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    transform: scale(1.05);
+  }
+  
+  canvas {
+    border: 2px solid #fff;
+    border-radius: 0%  ;
+    background: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+  }
+  
+  #score {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: white;
+  }
+  
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
